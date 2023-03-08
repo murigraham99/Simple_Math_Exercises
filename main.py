@@ -4,13 +4,13 @@ import math
 # simple math problems
 
 # Area of a circle:
-def ex1(r):
+def circle_area(r):
     area = math.pi * r ** 2
     print(round(area))
 
 
 # Factorial of a number:
-def ex2(numar):
+def factorial(numar):
     result = 1
     for i in range(numar):
         i += 1
@@ -19,13 +19,13 @@ def ex2(numar):
 
 
 # Sum of two numbers:
-def ex9(a, b):
+def sum(a, b):
     sum = a + b
     print(f"suma este {sum}")
 
 
 # Average of a list of numbers:
-def ex10(numbers):
+def average(numbers):
     sum = 0
     for i in numbers:
         sum = sum + i
@@ -34,7 +34,7 @@ def ex10(numbers):
 
 
 # Even or odd number:
-def ex12(number):
+def even_odd(number):
     if number % 2 == 0:
         print("even")
     else:
@@ -42,7 +42,7 @@ def ex12(number):
 
 
 # Check if number is divisible by another number:
-def ex15(n1, n2):
+def divisible(n1, n2):
     if n1 % n2 == 0:
         print("Este divizibil")
     else:
@@ -50,18 +50,18 @@ def ex15(n1, n2):
 
 
 # Distance between two points:
-def ex21(px1, py1, px2, py2):
+def distance_points(px1, py1, px2, py2):
     px = (px2 - px1) ** 2
     py = (py2 - py1) ** 2
     result = math.sqrt(px + py)
     print(result)
 
 
-ex1(5)
-ex2(3)
-ex9(2, 3)
-ex10([1, 2, 3, 4])
-ex12(3)
-ex15(6, 3)
-ex21(5, 7, 4, 8)
+circle_area(5)
+factorial(3)
+sum(2, 3)
+average([1, 2, 3, 4])
+even_odd(3)
+divisible(6, 3)
+distance_points(5, 7, 4, 8)
 
